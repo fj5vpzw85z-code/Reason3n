@@ -1,0 +1,25 @@
+# [PLAATSVOORHOUDER: ANTIGRAVITY_CI_CD]
+name: Reason3n MVP Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --workspaces
+      - name: Security Tests (Tenant Isolation, Hash Chain)
+        run: echo "Running security baseline tests..."
+      - name: Deploy to [PLAATSVOORHOUDER: ANTIGRAVITY_ENV]
+        run: echo "Deploying via antigravity cli..."

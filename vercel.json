@@ -1,0 +1,6 @@
+{
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build --workspace=@reason3n/web",
+  "outputDirectory": "apps/web/.next"
+}

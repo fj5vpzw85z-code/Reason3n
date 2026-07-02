@@ -1,0 +1,36 @@
+name: CI
+
+# Kwaliteitspoort op pull requests: bouwt de web-app (Next 'build' voert
+# type-check + lint uit) zonder te deployen. Deploy gebeurt apart via
+# deploy-web.yml op push naar main.
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (type-check + lint + static export)
+        run: npm run build --workspace=@reason3n/web
+
+      - name: Verify export
+        run: test -f apps/web/out/index.html || (echo "export ontbreekt" && exit 1)

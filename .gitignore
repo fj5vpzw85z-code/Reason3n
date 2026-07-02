@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Builds / output (CI bouwt dit; hoort niet in git)
+.next/
+apps/web/.next/
+apps/web/out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Env / secrets (nooit committen)
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

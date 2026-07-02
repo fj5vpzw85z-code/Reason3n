@@ -1,0 +1,27 @@
+{
+  "name": "@reason3n/api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "ts-node src/main.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@reason3n/contracts": "*",
+    "argon2": "^0.40.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.10.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}

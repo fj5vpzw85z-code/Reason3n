@@ -1,0 +1,32 @@
+# Serveert de statische Reason3n-demo op https://reason3n.dif3r3nt.nl
+# Caddy regelt automatisch een Let's Encrypt TLS-certificaat (poort 80 + 443
+# moeten open staan en de DNS A-record moet naar deze server wijzen).
+#
+# De demo is volledig frontend-only: geen backend/upstream nodig.
+
+reason3n.dif3r3nt.nl {
+	root * /srv/reason3n
+	encode zstd gzip
+
+	# Next static export (trailingSlash: true): /pad/ -> /pad/index.html
+	try_files {path} {path}/index.html
+	file_server
+
+	# Nette 404 uit de export bij onbekende paden
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+
+	# Basale security headers (spiegelt de marketing-site)
+	header {
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy strict-origin-when-cross-origin
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	}
+
+	# Immutable caching voor de gehashte Next-assets
+	@nextStatic path /_next/static/*
+	header @nextStatic Cache-Control "public, max-age=31536000, immutable"
+}

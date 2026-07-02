@@ -1,0 +1,7 @@
+# [PLAATSVOORHOUDER: ANTIGRAVITY_DEPLOY_ARTIFACT]
+name: reason3n-web
+type: frontend
+framework: nextjs
+env:
+  - name: NODE_ENV
+    value: production

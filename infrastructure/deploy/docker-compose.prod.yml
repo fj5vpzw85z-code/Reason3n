@@ -1,0 +1,27 @@
+# Productie-deploy van de Reason3n-demo: Caddy serveert de statische export
+# (apps/web/out) met automatische HTTPS. Geen Node-runtime nodig.
+#
+# Gebruik (vanaf de repo-root op de server):
+#   1. npm ci && npm run build --workspace=@reason3n/web   # maakt apps/web/out
+#   2. docker compose -f infrastructure/deploy/docker-compose.prod.yml up -d
+#
+# Vereist: DNS A-record reason3n.dif3r3nt.nl -> IP van deze server,
+# en poorten 80 + 443 open.
+
+services:
+  caddy:
+    image: caddy:2
+    container_name: reason3n-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../../infrastructure/deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ../../apps/web/out:/srv/reason3n:ro
+      - caddy_data:/data          # bewaart TLS-certificaten (belangrijk!)
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     locale: 'nl_NL',
     url: 'https://reason3n.vercel.app',
     siteName: 'Reason3n',
-    title: 'Reason3n — Het besturingssysteem voor marketing & sales',
+    title: 'Reason3n - Het besturingssysteem voor marketing & sales',
     description: 'AI stelt voor, mensen beslissen. Verbind je tools, onthoud elke beslissing, audit-klaar.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reason3n — AI stelt voor, mensen beslissen',
+    title: 'Reason3n - AI stelt voor, mensen beslissen',
     description: 'Operationele governance voor sales & marketing teams. Begrensde AI, verplichte rationale, tamper-evident logboek.',
   },
   robots: {

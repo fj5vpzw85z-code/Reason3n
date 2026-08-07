@@ -41,7 +41,7 @@ export default function LandingPage() {
       <section className="landing-hero">
         <div className="landing-hero-inner">
           <div className="badge-pill">
-            <Sparkles size={14} /> Nieuw — Operationele governance voor sales & marketing
+            <Sparkles size={14} /> Nieuw - Operationele governance voor sales & marketing
           </div>
           <h1 className="hero-title">
             AI <span className="text-accent">stelt voor</span>,<br />
@@ -56,17 +56,15 @@ export default function LandingPage() {
             <button onClick={handleTryDemo} className="btn-primary" style={{ padding: '14px 24px', fontSize: '15px' }}>
               Probeer de demo <ArrowRight size={16} />
             </button>
+            <a href={INTERESSE_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '14px 24px', fontSize: '15px' }}>
+              Interesse tonen <ArrowRight size={16} />
+            </a>
             <Link href="/pricing" className="btn-secondary" style={{ padding: '14px 24px', fontSize: '15px' }}>
               Bekijk prijzen
             </Link>
           </div>
-          <p style={{ fontSize: '14px', margin: '12px 0 0' }}>
-            <a href={INTERESSE_URL} target="_blank" rel="noopener noreferrer" className="text-accent" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500 }}>
-              Toon je interesse voor vroege toegang <ArrowRight size={15} />
-            </a>
-          </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: '8px 0 0' }}>
-            Geen creditcard nodig — directe toegang tot de demo-omgeving.
+            Geen creditcard nodig - directe toegang tot de demo-omgeving.
           </p>
         </div>
 
@@ -111,7 +109,7 @@ export default function LandingPage() {
       <section className="landing-section">
         <div className="section-header">
           <h2>Drie kernfuncties, één doel</h2>
-          <p>Geen losse tools meer — één plek waar je weet wat er gebeurt en waarom.</p>
+          <p>Geen losse tools meer - één plek waar je weet wat er gebeurt en waarom.</p>
         </div>
 
         <div className="feature-grid">
@@ -123,7 +121,7 @@ export default function LandingPage() {
           <div className="glass-panel feature-card">
             <div className="feature-icon"><Bot size={24} color="var(--accent)" /></div>
             <h3>Begrensde AI Voorstellen</h3>
-            <p>De AI mag voorstellen, nooit zelf uitvoeren. Elke goedkeuring vereist een geschreven rationale — verantwoordelijkheid blijft bij de mens.</p>
+            <p>De AI mag voorstellen, nooit zelf uitvoeren. Elke goedkeuring vereist een geschreven rationale - verantwoordelijkheid blijft bij de mens.</p>
           </div>
           <div className="glass-panel feature-card">
             <div className="feature-icon"><FileText size={24} color="var(--accent)" /></div>
@@ -142,7 +140,7 @@ export default function LandingPage() {
 
         <div className="how-it-works">
           {[
-            { icon: <Workflow size={20} />, num: '01', title: 'Koppel je tools', desc: 'OAuth-verbinding met HubSpot, Microsoft 365, Notion en Slack — geen data-migratie nodig.' },
+            { icon: <Workflow size={20} />, num: '01', title: 'Koppel je tools', desc: 'OAuth-verbinding met HubSpot, Microsoft 365, Notion en Slack - geen data-migratie nodig.' },
             { icon: <DatabaseZap size={20} />, num: '02', title: 'AI brengt orde', desc: 'Reason3n detecteert dubbele entiteiten, stilstaande pijplijnen en budget-anomalieën.' },
             { icon: <CheckCircle2 size={20} />, num: '03', title: 'Mens beslist', desc: 'Voorstellen verschijnen op je dashboard. Jij keurt goed met rationale, of negeert.' },
             { icon: <Shield size={20} />, num: '04', title: 'Logboek vergrendelt', desc: 'Goedgekeurde acties worden uitgevoerd én onveranderbaar vastgelegd in het beslissingenlogboek.' },
@@ -168,10 +166,10 @@ export default function LandingPage() {
               door te voeren. Reason3n draait dat om.
             </p>
             <ul className="why-list">
-              <li><Lock size={16} color="var(--accent)" /> AI heeft geen schrijfrechten — alle wijzigingen zijn mens-goedgekeurd</li>
+              <li><Lock size={16} color="var(--accent)" /> AI heeft geen schrijfrechten - alle wijzigingen zijn mens-goedgekeurd</li>
               <li><Shield size={16} color="var(--accent)" /> Tamper-evident audit-log voldoet aan AVG-vereisten</li>
-              <li><Globe size={16} color="var(--accent)" /> Werkt met je bestaande stack — geen migratie</li>
-              <li><CheckCircle2 size={16} color="var(--accent)" /> Verplichte rationale per beslissing — institutioneel geheugen blijft</li>
+              <li><Globe size={16} color="var(--accent)" /> Werkt met je bestaande stack - geen migratie</li>
+              <li><CheckCircle2 size={16} color="var(--accent)" /> Verplichte rationale per beslissing - institutioneel geheugen blijft</li>
             </ul>
           </div>
           <div className="glass-panel quote-card">
@@ -191,7 +189,7 @@ export default function LandingPage() {
       <section className="final-cta-section">
         <div className="glass-panel final-cta">
           <h2>Klaar om je sales-stack onder controle te krijgen?</h2>
-          <p>Probeer Reason3n vandaag nog — demo-omgeving met realistische data.</p>
+          <p>Probeer Reason3n vandaag nog - demo-omgeving met realistische data.</p>
           <div className="hero-cta" style={{ justifyContent: 'center' }}>
             <a href={INTERESSE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '14px 24px', fontSize: '15px' }}>
               Interesse tonen <ArrowRight size={16} />

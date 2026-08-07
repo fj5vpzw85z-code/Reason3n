@@ -10,7 +10,7 @@ export default function NotFound() {
         <h2 style={{ margin: 0, fontSize: '22px', fontWeight: 600 }}>Pagina niet gevonden</h2>
         <p style={{ color: 'var(--text-muted)', margin: 0, fontSize: '14px', lineHeight: 1.6 }}>
           De pagina die je zoekt bestaat niet of is verplaatst.
-          Geen zorgen — er is geen logboek-invoer aangemaakt voor deze actie.
+          Geen zorgen - er is geen logboek-invoer aangemaakt voor deze actie.
         </p>
         <div style={{ display: 'flex', gap: '12px', marginTop: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
           <Link href="/" className="btn-primary" style={{ padding: '10px 18px', fontSize: '14px' }}>

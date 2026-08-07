@@ -29,8 +29,8 @@ const TIERS = [
   {
     name: 'Pro',
     description: 'Voor groeiende sales- en marketing-organisaties.',
-    monthly: 199,
-    yearly: 159,
+    monthly: 299,
+    yearly: 239,
     cta: 'Probeer Pro 14 dagen',
     highlighted: true,
     features: [
@@ -67,7 +67,7 @@ const TIERS = [
 ];
 
 export default function PricingPage() {
-  const [billing, setBilling] = useState<Billing>('yearly');
+  const [billing, setBilling] = useState<Billing>('monthly');
 
   return (
     <div className="landing-root">
@@ -86,7 +86,7 @@ export default function PricingPage() {
 
       <section className="pricing-hero">
         <div className="badge-pill">
-          <Sparkles size={14} /> Eenvoudige prijzen — schaalt mee met je team
+          <Sparkles size={14} /> Eenvoudige prijzen - schaalt mee met je team
         </div>
         <h1 className="hero-title" style={{ fontSize: '42px' }}>Kies wat past</h1>
         <p className="hero-sub" style={{ maxWidth: '600px' }}>
@@ -130,7 +130,7 @@ export default function PricingPage() {
                     <>
                       <span className="price-currency">€</span>
                       <span className="price-value">{price}</span>
-                      <span className="price-period">/gebruiker/maand</span>
+                      <span className="price-period">/maand</span>
                     </>
                   )}
                 </div>

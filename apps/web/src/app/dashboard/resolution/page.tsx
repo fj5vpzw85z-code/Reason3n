@@ -109,14 +109,14 @@ export default function ResolutionModule() {
               <tr key={match.id} style={{ background: match.status === 'connected' ? 'rgba(74, 222, 128, 0.04)' : 'transparent' }}>
                 <td>
                   <div style={{ fontWeight: '500', fontSize: '15px', color: match.status === 'connected' ? 'var(--text-muted)' : 'inherit' }}>{match.sysA.name}</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '13px' }}>{match.sysA.type} — {match.sysA.source}</div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '13px' }}>{match.sysA.type} - {match.sysA.source}</div>
                 </td>
                 <td style={{ textAlign: 'center' }}>
                   <DatabaseZap color={match.status === 'connected' ? 'var(--text-muted)' : 'var(--accent)'} size={20} />
                 </td>
                 <td>
                   <div style={{ fontWeight: '500', fontSize: '15px', color: match.status === 'connected' ? 'var(--text-muted)' : 'inherit' }}>{match.sysB.name}</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '13px' }}>{match.sysB.type} — {match.sysB.source}</div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '13px' }}>{match.sysB.type} - {match.sysB.source}</div>
                 </td>
                 <td style={{ textAlign: 'center' }}>
                   <span style={{ color: match.confidence >= 90 ? 'var(--success)' : match.confidence >= 80 ? 'var(--warning)' : 'var(--danger)', fontWeight: '600' }}>

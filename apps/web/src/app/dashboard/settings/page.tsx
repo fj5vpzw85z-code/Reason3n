@@ -104,7 +104,7 @@ export default function SettingsModule() {
     setIntegrations(prev => prev.map(i => i.id === id ? { ...i, status: 'connecting' as const } : i));
     setTimeout(() => {
       setIntegrations(prev => prev.map(i => i.id === id ? { ...i, status: 'active' as const, lastSync: 'zojuist' } : i));
-      showToast('Tool gekoppeld — Reason3n leest nu mee');
+      showToast('Tool gekoppeld - Reason3n leest nu mee');
     }, 1500);
   };
 
@@ -169,7 +169,7 @@ export default function SettingsModule() {
       return;
     }
     persistSso(true, ssoProvider, ssoDomain);
-    showToast('Instellingen opgeslagen — Reason3n stuurt nu inlogverzoeken naar ' + ssoDomain);
+    showToast('Instellingen opgeslagen - Reason3n stuurt nu inlogverzoeken naar ' + ssoDomain);
   };
 
   const handleSaveRole = () => {

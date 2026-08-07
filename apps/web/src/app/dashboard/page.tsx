@@ -42,7 +42,7 @@ export default function DashboardOverview() {
       setIsExporting(false);
       setToast({
         msg: planInfo.signedExport
-          ? 'Logboek-PDF gedownload — cryptografisch ondertekend'
+          ? 'Logboek-PDF gedownload - cryptografisch ondertekend'
           : 'Logboek-PDF gedownload',
         signed: planInfo.signedExport,
       });
@@ -207,7 +207,7 @@ function UsagePanel({ plan }: { plan: Plan }) {
         <div>
           <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600 }}>Verbruik deze maand</h3>
           <p style={{ margin: '4px 0 0', color: 'var(--text-muted)', fontSize: '13px' }}>
-            Plan: <strong style={{ color: planInfo.color }}>{planInfo.label}</strong> — limieten worden per maand bijgehouden
+            Plan: <strong style={{ color: planInfo.color }}>{planInfo.label}</strong> - limieten worden per maand bijgehouden
           </p>
         </div>
         {showUpgrade && (
@@ -234,7 +234,7 @@ function UsagePanel({ plan }: { plan: Plan }) {
           label="AI-suggesties vandaag"
           used={USAGE.aiToday}
           limit={planInfo.aiPerDay}
-          hint={planInfo.aiPerDay === 'unlimited' ? 'Geen limiet — zoveel als nodig' : `Maximaal ${formatLimit(planInfo.aiPerDay)} per dag`}
+          hint={planInfo.aiPerDay === 'unlimited' ? 'Geen limiet - zoveel als nodig' : `Maximaal ${formatLimit(planInfo.aiPerDay)} per dag`}
         />
       </div>
     </div>

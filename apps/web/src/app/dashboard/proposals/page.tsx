@@ -99,10 +99,10 @@ export default function ProposalsModule() {
         <h1 style={{ fontSize: '28px', fontWeight: '600', marginBottom: '8px' }}>AI-suggesties</h1>
         <p style={{ color: 'var(--text-muted)' }}>
           De slimme assistent heeft het volgende opgemerkt. Lees het door, schrijf je reden op, en keur goed of negeer.
-          {pendingCount > 0 && <span style={{ color: 'var(--warning)', marginLeft: '8px' }}>— {pendingCount} wacht op jou</span>}
+          {pendingCount > 0 && <span style={{ color: 'var(--warning)', marginLeft: '8px' }}>- {pendingCount} wacht op jou</span>}
         </p>
         <div className="page-explainer">
-          <strong>Belangrijk:</strong> de AI doet alleen voorstellen — hij voert niets zelf uit.
+          <strong>Belangrijk:</strong> de AI doet alleen voorstellen - hij voert niets zelf uit.
           Pas als jij op &ldquo;Keur goed&rdquo; klikt wordt het doorgevoerd in de gekoppelde tool
           (zoals HubSpot of Excel) én vastgelegd in je logboek.
         </div>
@@ -124,7 +124,7 @@ export default function ProposalsModule() {
               <Bot color="var(--accent)" size={24} />
               <div style={{ flex: 1 }}>
                 <h2 style={{ fontSize: '18px', fontWeight: '500', margin: 0 }}>{proposal.title}</h2>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginTop: '4px' }}>{proposal.description} — Bron: {proposal.source}</div>
+                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginTop: '4px' }}>{proposal.description} - Bron: {proposal.source}</div>
               </div>
               {proposal.status === 'pending' && <div className="badge badge-pending">Wacht op jou</div>}
               {proposal.status === 'approving' && <div className="badge badge-active"><span className="spinner" style={{ width: '12px', height: '12px', display: 'inline-block', verticalAlign: 'middle', marginRight: '6px' }}></span>Verwerken...</div>}
@@ -149,7 +149,7 @@ export default function ProposalsModule() {
               </div>
             </div>
 
-            {/* Actions — only for pending */}
+            {/* Actions - only for pending */}
             {proposal.status === 'pending' && (
               <>
                 <div style={{ marginBottom: '16px' }}>

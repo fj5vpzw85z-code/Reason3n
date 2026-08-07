@@ -65,7 +65,7 @@ export default function LoginPage() {
           success = true;
         }
       } catch {
-        // API niet beschikbaar — demo fallback
+        // API niet beschikbaar - demo fallback
       }
 
       if (!success) {
@@ -77,7 +77,7 @@ export default function LoginPage() {
         const isCustomAccount = account && account.email === trimmedEmail && account.password === password;
 
         if (!isDefaultDemo && !isCustomAccount) {
-          throw new Error('Onjuiste inloggegevens. Probeer admin@reason3n.com / password123 of meld je aan voor een nieuw account.');
+          throw new Error('Onjuiste inloggegevens. Meld je aan voor een nieuw account of gebruik de demo-knop op de homepage.');
         }
 
         localStorage.setItem('access_token', isCustomAccount ? `demo_${Date.now()}` : 'demo_token');
@@ -152,7 +152,7 @@ export default function LoginPage() {
         </p>
 
         <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--text-muted)', padding: '12px', background: 'rgba(94,106,210,0.08)', border: '1px solid rgba(94,106,210,0.2)', borderRadius: '8px' }}>
-          <strong>Demo:</strong> admin@reason3n.com / password123
+          <strong>Demo:</strong> gebruik de knop <em>&ldquo;Probeer de demo&rdquo;</em> op de homepage voor directe toegang.
         </div>
       </form>
     </div>

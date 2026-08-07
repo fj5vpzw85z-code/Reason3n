@@ -34,7 +34,7 @@ export default function DocsPage() {
       <div style={{ marginBottom: '24px' }}>
         <h1 style={{ fontSize: '28px', fontWeight: 600, marginBottom: '8px' }}>Documenten</h1>
         <p style={{ color: 'var(--text-muted)' }}>
-          Drie korte documenten in alledaagse taal — geen technisch gedoe.
+          Drie korte documenten in alledaagse taal - geen technisch gedoe.
           Bedoeld voor jou en je collega&apos;s.
         </p>
       </div>
@@ -59,7 +59,7 @@ export default function DocsPage() {
       {/* Toolbar */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
         <div style={{ color: 'var(--text-muted)', fontSize: '13px' }}>
-          Versie 1.0 — Laatst bijgewerkt: mei 2026
+          Versie 1.0 - Laatst bijgewerkt: mei 2026
         </div>
         <div style={{ display: 'flex', gap: '8px' }}>
           <button onClick={handlePrint} className="btn-secondary">
@@ -96,7 +96,7 @@ function WelkomDoc() {
       <h2>Welkom bij Reason3n</h2>
       <p className="lead">
         Fijn dat je er bent. Dit document helpt je om binnen 10 minuten op gang te komen.
-        Je hoeft niets technisch te kunnen — alles kan met de muis en wat geduld.
+        Je hoeft niets technisch te kunnen - alles kan met de muis en wat geduld.
       </p>
 
       <h3>In één zin</h3>
@@ -109,20 +109,20 @@ function WelkomDoc() {
       <h3>Waarom heb je dit nodig?</h3>
       <ul>
         <li>Je werk staat verspreid over te veel programma&apos;s.</li>
-        <li>Niemand weet meer wie wat besloot — laat staan waarom.</li>
+        <li>Niemand weet meer wie wat besloot - laat staan waarom.</li>
         <li>Slimme computers (AI) doen tegenwoordig dingen zelf, terwijl jij liever zelf de baas blijft.</li>
         <li>Bij een controle wil je kunnen laten zien wat er gebeurd is.</li>
       </ul>
       <p>Reason3n lost deze vier zaken in één keer op.</p>
 
-      <h3>Je eerste week — in zes stappen</h3>
+      <h3>Je eerste week - in zes stappen</h3>
 
       <div className="step-row">
         <div className="step-circle">1</div>
         <div>
           <h4>Maak je account</h4>
           <p>
-            Je hebt al een account aangemaakt — anders zou je dit niet lezen.
+            Je hebt al een account aangemaakt - anders zou je dit niet lezen.
             Bovenaan rechts zie je je e-mailadres en de naam van je werkruimte.
             Dat is jouw eigen, afgeschermde omgeving.
           </p>
@@ -136,7 +136,7 @@ function WelkomDoc() {
           <p>
             Ga in het menu naar <strong>Instellingen</strong>. Onder &ldquo;Connecties&rdquo;
             staan de programma&apos;s die je kan koppelen. Klik op <em>Koppelen</em> en
-            log in met je gewone werk-account. Je hoeft geen data te kopiëren of over te zetten —
+            log in met je gewone werk-account. Je hoeft geen data te kopiëren of over te zetten -
             Reason3n leest alleen mee.
           </p>
           <div className="callout">
@@ -155,9 +155,9 @@ function WelkomDoc() {
             uitnodigen. Je kiest per persoon wat ze mogen:
           </p>
           <ul>
-            <li><strong>Bekijken</strong> — alleen meekijken, niets wijzigen</li>
-            <li><strong>Voorstellen indienen</strong> — mag suggesties doen</li>
-            <li><strong>Volledige toegang</strong> — beheert ook de instellingen</li>
+            <li><strong>Bekijken</strong> - alleen meekijken, niets wijzigen</li>
+            <li><strong>Voorstellen indienen</strong> - mag suggesties doen</li>
+            <li><strong>Volledige toegang</strong> - beheert ook de instellingen</li>
           </ul>
         </div>
       </div>
@@ -193,7 +193,7 @@ function WelkomDoc() {
         <div>
           <h4>Open je logboek</h4>
           <p>
-            Onder <strong>Beslissingen Logboek</strong> staat alles wat er gebeurd is —
+            Onder <strong>Beslissingen Logboek</strong> staat alles wat er gebeurd is -
             wie wat heeft gedaan, wanneer, en met welke reden.
             Dit logboek kan niemand achteraf aanpassen, ook wij niet. Handig voor
             de boekhouder, een controle, of als iemand zich afvraagt &ldquo;wie heeft dit
@@ -214,7 +214,7 @@ function WelkomDoc() {
         <h4 style={{ marginTop: 0 }}>Tip voor je eerste dag</h4>
         <p style={{ margin: 0 }}>
           Begin met één tool koppelen (HubSpot of Excel is het simpelst).
-          Wacht een uurtje — dan heeft Reason3n genoeg gelezen om de eerste suggesties te tonen.
+          Wacht een uurtje - dan heeft Reason3n genoeg gelezen om de eerste suggesties te tonen.
           Vanaf daar wordt het vanzelf duidelijk.
         </p>
       </div>
@@ -240,17 +240,17 @@ function WatKanHetDoc() {
       </p>
       <ul>
         <li>
-          <strong>Wachtende koppelingen</strong> — Reason3n vermoedt dat twee dingen uit
+          <strong>Wachtende koppelingen</strong> - Reason3n vermoedt dat twee dingen uit
           verschillende tools eigenlijk hetzelfde zijn (bijvoorbeeld dezelfde campagne in
           HubSpot en in Excel). Hier zie je hoeveel daarvan op jouw oordeel wachten.
         </li>
         <li>
-          <strong>Suggesties</strong> — voorstellen die de slimme computer heeft gemaakt
+          <strong>Suggesties</strong> - voorstellen die de slimme computer heeft gemaakt
           (deal-fase aanpassen, budget verlagen, campagne pauzeren).
           Niets gebeurt zonder dat jij &lsquo;ja&rsquo; zegt.
         </li>
         <li>
-          <strong>Beslissingen vastgelegd</strong> — het aantal genomen beslissingen tot nu toe.
+          <strong>Beslissingen vastgelegd</strong> - het aantal genomen beslissingen tot nu toe.
           Dit cijfer kan alleen omhoog, niet omlaag.
         </li>
       </ul>
@@ -261,7 +261,7 @@ function WatKanHetDoc() {
 
       <h3>Koppelingen tussen tools</h3>
       <p>
-        Onder &ldquo;Entiteit Resolutie&rdquo; — wat een ingewikkeld woord is voor
+        Onder &ldquo;Entiteit Resolutie&rdquo; - wat een ingewikkeld woord is voor
         <em> dingen aan elkaar verbinden die bij elkaar horen</em>.
       </p>
       <p>
@@ -273,7 +273,7 @@ function WatKanHetDoc() {
       </p>
       <p>
         Waarom is dit handig? Omdat je daarna in elk rapport ziet wat er bij die ene
-        campagne hoort — uit alle tools tegelijk. Geen dubbele administratie meer.
+        campagne hoort - uit alle tools tegelijk. Geen dubbele administratie meer.
       </p>
 
       <h3>Slimme suggesties (AI Voorstellen)</h3>
@@ -281,9 +281,9 @@ function WatKanHetDoc() {
         De slimme computer leest mee met je werk en wijst je op dingen die opvallen:
       </p>
       <ul>
-        <li>Een deal staat al 18 dagen stil — misschien terugzetten naar &lsquo;verkennend gesprek&rsquo;?</li>
-        <li>De kosten per klik op een advertentie zijn sterk gestegen — budget verlagen?</li>
-        <li>Een campagne loopt al 3 weken zonder resultaat — pauzeren?</li>
+        <li>Een deal staat al 18 dagen stil - misschien terugzetten naar &lsquo;verkennend gesprek&rsquo;?</li>
+        <li>De kosten per klik op een advertentie zijn sterk gestegen - budget verlagen?</li>
+        <li>Een campagne loopt al 3 weken zonder resultaat - pauzeren?</li>
       </ul>
       <p>
         Bij elk voorstel zie je <strong>de huidige situatie</strong> en <strong>het voorstel</strong>
@@ -305,7 +305,7 @@ function WatKanHetDoc() {
         <li>Wie het heeft gedaan</li>
         <li>Wanneer (datum + tijd)</li>
         <li>De reden, in eigen woorden opgeschreven</li>
-        <li>Een unieke vingerafdruk-code (technisch detail — voor de boekhouder of jurist)</li>
+        <li>Een unieke vingerafdruk-code (technisch detail - voor de boekhouder of jurist)</li>
       </ul>
       <p>
         Je kan zoeken in het logboek (op naam, op reden, op persoon) en het hele logboek
@@ -320,15 +320,15 @@ function WatKanHetDoc() {
       </p>
       <ul>
         <li>
-          <strong>Tools koppelen</strong> — HubSpot, Microsoft 365 (Excel), Notion, Slack.
+          <strong>Tools koppelen</strong> - HubSpot, Microsoft 365 (Excel), Notion, Slack.
           Eén keer inloggen en het is verbonden. Ontkoppelen kan ook met één klik.
         </li>
         <li>
-          <strong>Teamleden beheren</strong> — collega&apos;s uitnodigen, hun rol aanpassen,
+          <strong>Teamleden beheren</strong> - collega&apos;s uitnodigen, hun rol aanpassen,
           of toegang weer intrekken.
         </li>
         <li>
-          <strong>Taal kiezen</strong> — Nederlands, Engels, Duits, Frans of Spaans.
+          <strong>Taal kiezen</strong> - Nederlands, Engels, Duits, Frans of Spaans.
           Linksonderin de zijbalk.
         </li>
       </ul>
@@ -344,7 +344,7 @@ function WatKanHetDoc() {
       <ul>
         <li>Het verstuurt geen e-mails namens jou.</li>
         <li>Het doet niets in je tools zonder jouw expliciete goedkeuring.</li>
-        <li>Het deelt geen data met andere klanten — jouw werkruimte staat los.</li>
+        <li>Het deelt geen data met andere klanten - jouw werkruimte staat los.</li>
         <li>Het verkoopt je gegevens niet door.</li>
       </ul>
     </>
@@ -379,14 +379,14 @@ function HoeWerktHetDoc() {
       <p>Na het inloggen kom je op de startpagina. Lees ze van links naar rechts:</p>
       <ol>
         <li>
-          <strong>Wachtende matches (groot getal)</strong> — voorgestelde verbindingen
+          <strong>Wachtende matches (groot getal)</strong> - voorgestelde verbindingen
           tussen tools waar jouw bevestiging op wacht.
         </li>
         <li>
-          <strong>Suggesties (geel cijfer)</strong> — voorstellen om iets aan te passen.
+          <strong>Suggesties (geel cijfer)</strong> - voorstellen om iets aan te passen.
         </li>
         <li>
-          <strong>Beslissingen (groen cijfer)</strong> — alles wat al is afgehandeld.
+          <strong>Beslissingen (groen cijfer)</strong> - alles wat al is afgehandeld.
         </li>
       </ol>
       <p>Klik op een tegel om de volledige lijst te openen.</p>
@@ -397,7 +397,7 @@ function HoeWerktHetDoc() {
         <li>Lees de titel en de uitleg eronder. Bij twijfel: kijk in HubSpot of Excel zelf even na.</li>
         <li>
           Schrijf in het tekstvak <strong>waarom</strong> je dit doorvoert.
-          Minimaal tien tekens. Niet uit pesterij — dit is wat je later helpt herinneren
+          Minimaal tien tekens. Niet uit pesterij - dit is wat je later helpt herinneren
           waarom je deze keuze maakte.
         </li>
         <li>Klik op <em>Keur goed &amp; Voer uit</em>.</li>
@@ -425,7 +425,7 @@ function HoeWerktHetDoc() {
       <ol>
         <li>Klik in het menu op <strong>Entiteit Resolutie</strong>.</li>
         <li>Je ziet een tabel met paren: links uit tool A, rechts uit tool B, met een score in het midden.</li>
-        <li>Lees de namen — kloppen ze? (Een score boven de 90% klopt bijna altijd.)</li>
+        <li>Lees de namen - kloppen ze? (Een score boven de 90% klopt bijna altijd.)</li>
         <li>Klik op <em>Verbinden</em>.</li>
         <li>Het paar krijgt het label &ldquo;Gekoppeld&rdquo; en is nu verbonden in al je rapporten.</li>
       </ol>
@@ -486,7 +486,7 @@ function HoeWerktHetDoc() {
         <li>Klik op het uitklapmenu ernaast.</li>
         <li>Kies je taal: Nederlands, Engels, Duits, Frans of Spaans.</li>
       </ol>
-      <p>De hele app wisselt direct van taal — je hoeft niet opnieuw in te loggen.</p>
+      <p>De hele app wisselt direct van taal - je hoeft niet opnieuw in te loggen.</p>
 
       <h3>Uitloggen</h3>
       <ol>
@@ -501,7 +501,7 @@ function HoeWerktHetDoc() {
           Vernieuw eerst de pagina (Ctrl+R of Cmd+R). Werkt het nog niet, log dan uit en
           weer in. Helpt dat ook niet?
           Mail <a href="mailto:hallo@reason3n.com" style={{ color: 'var(--accent)' }}>hallo@reason3n.com</a>
-          {' '}met een korte beschrijving — het liefst met een schermafbeelding erbij.
+          {' '}met een korte beschrijving - het liefst met een schermafbeelding erbij.
         </p>
       </div>
     </>

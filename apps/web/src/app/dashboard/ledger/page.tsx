@@ -48,7 +48,7 @@ export default function LedgerModule() {
     setTimeout(() => {
       setToast({
         msg: signedExport
-          ? 'PDF gedownload — voorzien van digitale handtekening'
+          ? 'PDF gedownload - voorzien van digitale handtekening'
           : 'PDF gedownload',
         signed: signedExport,
       });
@@ -61,7 +61,7 @@ export default function LedgerModule() {
       <div style={{ marginBottom: '24px' }}>
         <h1 style={{ fontSize: '28px', fontWeight: '600', marginBottom: '8px' }}>Logboek</h1>
         <p style={{ color: 'var(--text-muted)' }}>
-          Elke beslissing in je werkruimte staat hier — wie het deed, wanneer, en vooral <strong>waarom</strong>.
+          Elke beslissing in je werkruimte staat hier - wie het deed, wanneer, en vooral <strong>waarom</strong>.
         </p>
         <div className="page-explainer">
           Dit logboek kan niemand achteraf wijzigen of verwijderen, ook wij van Reason3n niet.
@@ -85,7 +85,7 @@ export default function LedgerModule() {
         <button className="btn-secondary" onClick={handleExport}>
           <Download size={16} /> Download als PDF
           {signedExport && (
-            <span className="signed-badge" title="Bij export wordt een digitale handtekening toegevoegd — bewijst dat het bestand niet gewijzigd is">
+            <span className="signed-badge" title="Bij export wordt een digitale handtekening toegevoegd - bewijst dat het bestand niet gewijzigd is">
               <ShieldCheck size={12} /> ondertekend
             </span>
           )}
@@ -94,7 +94,7 @@ export default function LedgerModule() {
 
       {/* Integrity banner */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(74, 222, 128, 0.08)', border: '1px solid rgba(74, 222, 128, 0.2)', borderRadius: '10px', padding: '12px 16px', marginBottom: '24px', fontSize: '13px', color: 'var(--success)' }}>
-        <Shield size={18} /> Logboek gecontroleerd — alle {LEDGER_DATA.length} beslissingen zijn ongewijzigd
+        <Shield size={18} /> Logboek gecontroleerd - alle {LEDGER_DATA.length} beslissingen zijn ongewijzigd
       </div>
 
       {/* Timeline */}
@@ -129,7 +129,7 @@ export default function LedgerModule() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '13px' }}>
                   <User size={14} /> Uitgevoerd door: <strong style={{ color: 'var(--text-main)' }}>{entry.actor}</strong> via {entry.method}
                 </div>
-                <div className="ledger-hash" style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: 'monospace' }} title="Unieke verificatiecode — laat zien dat deze regel niet gewijzigd is">
+                <div className="ledger-hash" style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: 'monospace' }} title="Unieke verificatiecode - laat zien dat deze regel niet gewijzigd is">
                   Verificatie: {entry.hash}
                 </div>
               </div>

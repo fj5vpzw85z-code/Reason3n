@@ -107,7 +107,7 @@ function SignupForm() {
           <h1>Maak je werkruimte aan</h1>
           <p>
             Plan: <strong style={{ color: 'var(--accent)', textTransform: 'capitalize' }}>{plan}</strong>
-            {plan !== 'enterprise' && ' — 14 dagen gratis, geen creditcard nodig'}
+            {plan !== 'enterprise' && ' - 14 dagen gratis, geen creditcard nodig'}
           </p>
         </div>
 

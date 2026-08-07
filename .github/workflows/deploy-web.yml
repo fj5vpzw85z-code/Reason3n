@@ -3,17 +3,16 @@ name: Deploy Reason3n demo
 # Bouwt de statische export van apps/web en pusht die via SSH/rsync naar de
 # self-hosted server (Caddy serveert apps/web/out met automatische HTTPS).
 # De demo is frontend-only: geen backend/registry nodig.
+#
+# TIJDELIJK op alleen 'workflow_dispatch' (handmatig): zolang de VPS + DNS +
+# DEPLOY_*-secrets nog niet klaar zijn, zou een push-trigger elke keer falen.
+# De live-demo draait intussen op GitHub Pages (pages.yml). Zet de push-trigger
+# hieronder terug zodra de server klaar is:
+#   push:
+#     branches: [main]
+#     paths: ['apps/web/**','packages/**','package.json','package-lock.json','infrastructure/deploy/**','.github/workflows/deploy-web.yml']
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'apps/web/**'
-      - 'packages/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'infrastructure/deploy/**'
-      - '.github/workflows/deploy-web.yml'
   workflow_dispatch: {}
 
 # Nooit twee deploys tegelijk; nieuwste wint.

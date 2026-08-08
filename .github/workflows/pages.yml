@@ -34,13 +34,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static export (basePath /Reason3n)
+      - name: Build static export (root, voor custom domein)
         run: npm run build --workspace=@reason3n/web
-        env:
-          PAGES_BASE_PATH: /Reason3n
 
       - name: Voorkom Jekyll-verwerking (behoud _next map)
         run: touch apps/web/out/.nojekyll
+
+      - name: Custom domein (CNAME)
+        run: echo 'reason3n.dif3r3nt.nl' > apps/web/out/CNAME
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

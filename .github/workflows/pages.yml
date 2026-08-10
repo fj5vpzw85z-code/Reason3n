@@ -34,14 +34,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static export (root, voor custom domein)
+      - name: Build static export (basePath /Reason3n)
         run: npm run build --workspace=@reason3n/web
+        env:
+          PAGES_BASE_PATH: /Reason3n
 
       - name: Voorkom Jekyll-verwerking (behoud _next map)
         run: touch apps/web/out/.nojekyll
 
-      - name: Custom domein (CNAME)
-        run: echo 'reason3n.dif3r3nt.nl' > apps/web/out/CNAME
+      # Custom domein reason3n.dif3r3nt.nl staat klaar maar wacht op DNS.
+      # Zodra het DNS-record (CNAME reason3n -> fj5vpzw85z-code.github.io) live is,
+      # zet ik de basePath-env hierboven UIT en her-activeer ik onderstaande stap:
+      # - name: Custom domein (CNAME)
+      #   run: echo 'reason3n.dif3r3nt.nl' > apps/web/out/CNAME
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
